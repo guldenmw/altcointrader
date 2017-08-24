@@ -20,6 +20,8 @@ class Channels(object):
         self.xrp = None
         self.zec = None
 
+        self.update()
+
     def update(self):
         try:
             result = requests.get("https://www.altcointrader.co.za/api/v2/live-stats").json()
