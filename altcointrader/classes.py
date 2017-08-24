@@ -8,7 +8,8 @@ from pprint import pprint, pformat
 logging.basicConfig(level=logging.WARNING)
 log = logging.getLogger(__name__)
 
-class AltcoinTrader(object):
+
+class Channels(object):
     def __init__(self):
         self.btc = None
         self.bcc = None
